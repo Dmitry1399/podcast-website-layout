@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/verstka/try_verstka26092023/fonts/DMSans-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+    src: url(/verstka/try_verstka26092023/fonts/DMSans-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #191919;
+    color: #FFFFFF;
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1330px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 40px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-item {
+    margin-right: 40px;
+    list-style-type: none;
+}
+
+.menu-item:last-child {
+    margin-right: 0px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 27px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.menu-item .active {
+    color: #118DA8;
+}
+
+.hero-section {
+
+    display: flex;
+
+    align-items: flex-end;
+}
+
+.hero-img {
+    position: relative;
+    max-width: 100%;
+    min-height: 100%;
+    
+}
+
+.main-image {
+
+    border-radius: 12px;
+    max-width: 100%;
+    border-style: none;
+}
+
+.decoration-img {
+
+    position: absolute;
+    top: -26px;
+    left: -26px;
+
+}
+
+
+.right-side-content {
+    width: 50%;
+    padding-left: 60px;
+    padding-bottom: 150px;
+
+}
+
+
+.share-social-list {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.share-social-item {
+    margin-right: 17px;
+}
+
+.big-words {
+    font-family: DM Sans;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: 3.2px;
+    margin-bottom: 70px;
+}
+
+.share-social {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    line-height: 24px;
+
+}
+
+.blue-strip-words {
+    position: relative;
+    display: inline-block;
+}
+
+.blue-strip-words::after {
+    position: absolute;
+    content: url(../image/BlueLine.svg);
+    top: -7px;
+    left: 0;
+    width: 100%;
+    height: 11px;
+
+}
+
+
+.bold-word {
+    font-weight: 700;
+
+}
+
+.episodes {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
