@@ -1,8 +1,20 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
 @font-face {
     font-family: "DM Sans";
     font-style: normal;
     font-weight: 400;
-    src: url(/verstka/try_verstka26092023/fonts/DMSans-Regular.ttf);
+    src: url(../fonts/DMSans-Regular.ttf);
 
 }
 
@@ -11,27 +23,32 @@
     font-style: normal;
     font-weight: 700;
     color: #FFFFFF;
-    src: url(/verstka/try_verstka26092023/fonts/DMSans-Bold.ttf);
+    src: url(../fonts/DMSans-Bold.ttf);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
-    background-color: #191919;
-    color: #FFFFFF;
+    margin: 0;
+    background-color: var(--background);
+    color: var(--white-text);
     font-family: "DM Sans", sans-serif;
     font-size: 22px;
+    font-weight: 400;
     font-style: normal;
 }
 
 .container {
     max-width: 1330px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding: 0 15px;
+}
+
+:root {
+    --white-text: #FFFFFF;
+    --btn: #118DA8;
+    --card: #000000;
+    --background: #191919;
 }
 
 .header {
@@ -43,26 +60,27 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1330px;
-    margin: 0 auto;
     padding: 0 15px;
 
 }
 
+.main-logo {
+    width: 160px;
+    height: 33px;
+}
 
-
+.navigation {
+    width: 364px;
+}
 .nav-menu {
     display: flex;
     align-items: center;
-
+    list-style: none;
 }
 
-.menu-item {
+.menu-item:not(:last-child) {
     margin-right: 40px;
-    list-style-type: none;
-}
 
-.menu-item:last-child {
-    margin-right: 0px;
 }
 
 .menu-item a {
@@ -87,12 +105,10 @@ body {
 
 .hero-img {
     position: relative;
-    max-width: 100%;
-    min-height: 100%;
-    
-}
+    width: 50%;
 
-.main-image {
+}
+.hero-img .main-image {
 
     border-radius: 12px;
     max-width: 100%;
@@ -116,23 +132,14 @@ body {
 }
 
 
-.share-social-list {
-    display: flex;
-    list-style-type: none;
-
-}
-
-.share-social-item {
-    margin-right: 17px;
-}
-
 .big-words {
-    font-family: DM Sans;
+    margin: 0;
     font-size: 70px;
     font-weight: 400;
     line-height: 88px;
     letter-spacing: 3.2px;
     margin-bottom: 70px;
+    
 }
 
 .share-social {
@@ -143,6 +150,16 @@ body {
     line-height: 24px;
 
 }
+.share-social-list {
+    display: flex;
+    list-style-type: none;
+
+}
+
+.share-social-item {
+    margin-right: 17px;
+}
+
 
 .blue-strip-words {
     position: relative;
