@@ -195,6 +195,10 @@ body {
 
 }
 
+.section-episodes {
+    margin-bottom: 100px;
+}
+
 .container-episod {
     padding-top: 87px;
     padding-right: 0;
@@ -233,17 +237,13 @@ body {
     margin-bottom: 60px;
     border-radius: 32px;
     background: var(--card);
+    padding: 40px;
 }
 
 .episodes-card__image {
     width: 389px;
-    padding: 40px 0 40px 40px;
+    margin-right: 53px;
 
-}
-
-.episodes-card__content {
-    padding: 40px 0 0 53px;
-    margin: 0 40px 40px 0;
 }
 
 .episodes-card__content__category {
@@ -268,11 +268,9 @@ body {
 .episodes-card__content__title {
     color: var(--white-text);
     font-size: 64px;
-    font-style: normal;
     font-weight: 400;
     line-height: 70.4px;
     letter-spacing: 2.56px;
-    max-width: 700px;
     margin-bottom: 28px;
 }
 
@@ -295,5 +293,64 @@ body {
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    padding: 12px 15px 12px 20px;
+    padding: 10px 20px;
+}
+
+.container-host {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 160px;
+}
+
+.host-info {
+    padding-top: 147px;
+    margin-right: 60px;
+}
+
+.host-info__container-arrow {
+    position: relative;
+    width: 112px;
+    height: 112px;
+    background-color: var(--btn);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.host-info__container-arrow_right-arrow {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 370%;
+    left: 13px;
+    bottom: 11px;
+
+
+}
+
+.host-info__invite {
+    color: #118DA8;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.host-info__name {
+    color: var(--white-text);
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 79.2px;
+    letter-spacing: 2.88px;
+    margin-bottom: 28px;
+}
+
+.host-info__achievements {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px; 
+    margin-bottom: 33px;
+}
+
+.container-host__img {
+    width: 650px;
 }
